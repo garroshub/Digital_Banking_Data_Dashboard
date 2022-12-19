@@ -30,11 +30,11 @@ if option == 'Data Summary':
     st.write('Here is some summary calculations of the data, I splitted into 3 dataframes for better understanding.')
     if st.sidebar.checkbox('Raw data sets'):
         st.subheader('Bank data')
-        st.dataframe(bank_data.head())
+        st.write(bank_data.head())
 
     if st.sidebar.checkbox('Summary calculations'):
         st.subheader('Bank data summary:')
-        st.table(bank_data.describe())
+        st.write(bank_data.describe())
 
     else: st.write('Pick something to see in the sidebar.')
 
