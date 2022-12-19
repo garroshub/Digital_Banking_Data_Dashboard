@@ -31,14 +31,11 @@ if option == 'Data Summary':
     if st.sidebar.checkbox('Raw data sets'):
         st.subheader('Bank data')
         st.dataframe(bank_data.head())
-        st.subheader('yes_df:')
-        st.subheader('no_df:')
 
     if st.sidebar.checkbox('Summary calculations'):
         st.subheader('Bank data summary:')
         st.table(bank_data.describe())
-        st.subheader('yes_df summary:')
-        st.subheader('no_df summary:')
+
     else: st.write('Pick something to see in the sidebar.')
 
 if option == 'Age':
